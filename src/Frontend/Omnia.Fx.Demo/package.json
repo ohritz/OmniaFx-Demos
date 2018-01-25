@@ -7,7 +7,8 @@
     "omf-after-build": "gulp omf-after-build",
     "dev": "gulp omnia-serve",
     "bundle": "gulp omnia-bundle",
-    "setup:cert": "node ./tools/generateCerts.js"
+    "setup:trustcert": "gulp trust-cert",
+    "setup:untrustcert": "gulp untrust-cert"
   },
   "dependencies": {
     "@omnia/foundation": "1.0.9371-preview",
@@ -18,11 +19,12 @@
     "node-forge": "^0.7.1"
   },
   "devDependencies": {
+    "@types/webpack": "^3.8.3",
     "glob": "5.0.13",
     "gulp": "3.9.1",
     "gulp-cli": "1.2.2",
-    "pem": "^1.12.3",
-    "node-powershell": "^3.3.1"
+    "node-powershell": "^3.3.1",
+    "pem": "^1.12.3"
   },
   "engines": {
     "node": ">=0.10.0"

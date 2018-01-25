@@ -7,6 +7,8 @@ Currently it will generate certificates cross platform, (you might need to insta
 
 But trusting the certificates only works on windows, but work is underway to support crossplatform.
 
-run `npm run setup:cert` in a administrator powershell session or `sudo npm run setup:cert` on other platforms.
+run `npm run setup:trustcert` to generate and trust a localhost dev certificate.
 
-On windows you will get a popup to accept the addition of the certificate.
+`setup:untrustcert` will remove it.
+
+On windows and mac you will get a popup to accept the addition of the certificate.
